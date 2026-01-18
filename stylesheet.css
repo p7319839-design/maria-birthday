@@ -1280,25 +1280,34 @@ audio {
 	display: none;
 	font-weight: bold;
 }
-
 .btn-primary {
-        border-color: #466baf;
-        padding: 10px;
-        text-transform: uppercase;
-        font-family: 'Signika', sans-serif;
-        font-weight: 700;
-        color: #fff;
-        background-color: #466baf;
+    border: 1px solid #0088cc; /* Светлый синий */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0088cc; /* Синий фон */
+    border-radius: 8px; /* Закругление углов */
+    transition: all 0.3s ease; /* Плавные переходы */
 }
-    .btn-primary:hover,
-    .btn-primary:focus,
-    .btn-primary:active,
-    .btn-primary.active,
-    .open .dropdown-toggle.btn-primary {
-        border-color: #fff;
-        color: #fff;
-        background-color: #466baf;
-    }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-color: #00b8ff; /* Ярче голубой при наведении */
+    border-color: #00b8ff;
+    color: #fff;
+}
+
+.btn-primary:disabled {
+    background-color: #b3e0ff; /* Бледный синий для неактивных кнопок */
+    border-color: #b3e0ff;
+    color: #c1c1c1; /* Светлый серый текст для неактивных */
+}
+
 
 
 
